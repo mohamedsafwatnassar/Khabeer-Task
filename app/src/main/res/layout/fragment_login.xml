@@ -15,7 +15,7 @@
         android:padding="15dp"
         android:text="@string/welcome_back"
         android:textColor="@color/colorPrimary"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,17 +25,18 @@
         android:id="@+id/txtSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="@dimen/space_3x"
+        android:layout_marginTop="@dimen/space_4x"
         android:gravity="start"
         android:text="@string/sign_in"
         android:textColor="@color/colorPrimary"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtWelcome" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtInputPhoneNumber"
+        android:id="@+id/txtInputMobileNumber"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +56,9 @@
             android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="01068962997" />
+            android:text="01068962997"
+            android:inputType="phone"
+            android:hint="@string/mobile_number"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,13 +70,13 @@
         android:layout_marginStart="@dimen/space_4.5x"
         android:layout_marginTop="@dimen/space_5x"
         android:layout_marginEnd="@dimen/space_4.5x"
-        app:endIconMode="password_toggle"
-        app:endIconTint="@color/colorPrimary"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary"
         app:hintAnimationEnabled="false"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtInputPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/txtInputMobileNumber"
         app:shapeAppearance="@style/Rounded"
         app:startIconDrawable="@drawable/ic_lock"
         app:startIconTint="@color/colorPrimary">
@@ -82,7 +85,9 @@
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="123456" />
+            android:text="123456"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
