@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KHABEER Task</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Fragment login -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in">Sign in</string>
+    <string name="required">Field is required</string>
+    <string name="valid_phone">Please enter valid phone</string>
+    <string name="valid_password">"Password should more than 8 chars"</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="try_again">TryAgain</string>
+    <string name="num">num</string>
+    <string name="clause">clause</string>
+    <string name="value">value</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="employee_salary">Employee salary</string>
+
+</resources>
